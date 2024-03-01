@@ -1,0 +1,89 @@
+@import "../../../css-config/mixins.scss";
+
+.workout {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+
+    @include md {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+    }
+
+    .workout__exercises {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+
+        .workout__exercise {
+
+            @include md {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                width: 100%;
+            }
+
+            .workout__exercise__image video {
+                max-width: 100%;
+                height: auto;
+                min-width: 300px;
+            }
+
+            .workout__exercise__content {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                margin-left: 20px;
+                align-items: center;
+
+                h2 {
+                    font-size: 50px;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1px var(--col1);
+                    color: transparent;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #ffffff;
+                    background-color: var(--col1);
+                    padding: 5px 20px;
+                    border-radius: 35px;
+                    width: fit-content;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: var(--col1);
+                }
+
+                @include md{
+                    align-items: flex-start;
+                    text-align: left;
+                }
+            }
+        }
+
+        h3 {
+            color: black;
+            @include md {
+                -webkit-text-stroke: 1px var(--col1);
+                color: transparent;
+                font-size: 5rem;
+                font-weight: 900;
+                text-align: center;
+                border: 1px solid var(--col1);
+                width: 7rem;
+                aspect-ratio: 1/1;
+                border-radius: 100%;
+                margin-right: 20px;
+            }
+        }
+    }
+}

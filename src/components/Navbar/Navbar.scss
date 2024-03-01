@@ -1,0 +1,103 @@
+// Navbar.scss
+@import "../../css-config/mixins.scss";
+
+nav {
+    background-color: #1e1f1f;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    gap: 30px;
+
+    .img {
+        height: 30px;
+        width: auto;
+
+        @include md {
+            height: 50px;
+        }
+    }
+
+    .center {
+        .search {
+            display: inline-block;
+            position: relative;
+        }
+
+        .search input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search button[type="submit"] {
+            background-color: #a6ff00;
+            border: none;
+            color: black;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: .9s ease;
+        }
+
+        .search button[type="submit"]:hover {
+            transform: scale(1.1);
+            color: black;
+            background-color: #858585;
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #a6ff00;
+        }
+    }
+
+    .iosbody {
+        padding-top: 6px;
+
+        @include md {
+            padding-top: 9px;
+        }
+    }
+
+    button {
+        background-color: #a6ff00;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: black;
+        transition: 0.3s ease-in-out;
+        padding: 10px;
+
+        &:hover {
+            background-color: #858585;
+        }
+    }
+
+    @include md {
+        height: 90px;
+        padding: 0 50px;
+    }
+}
