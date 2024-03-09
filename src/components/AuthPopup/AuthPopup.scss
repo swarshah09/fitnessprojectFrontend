@@ -16,8 +16,10 @@
     }
 
     .logo{
-        position: absolute;
+        position: fixed;
         top: 30px;
+        width: 1500px;
+        height: 900px;
         @include md{
             display: none;
         }
@@ -70,6 +72,23 @@
                 box-sizing: border-box;
                 padding: 12px 15px;
                 margin-bottom: 15px;
+            }
+
+            .pass {
+                position: relative;
+                width: 100%;
+                display: flex;
+                .input {
+                    width: 100%;
+                }
+                .password-toggle {
+                    position: absolute;
+                    right: 10px; /* Adjust as needed */
+                    top: 40%;
+                    transform: translateY(-50%);
+                    font-size: 20px;
+                    color: #000;
+                }
             }
 
             .form_input_leftright {
@@ -253,6 +272,23 @@
                 outline: 0 !important;
                 box-sizing: border-box;
                 padding: 12px 15px;
+            }
+
+            .pass1 {
+                position: relative;
+                width: 100%;
+                display: flex;
+                .inputL {
+                    width: 100%;
+                }
+                .password-toggle {
+                    position: absolute;
+                    right: 10px; /* Adjust as needed */
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 20px;
+                    color: #000;
+                }
             }
 
             .page-linkL {

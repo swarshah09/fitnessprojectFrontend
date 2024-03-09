@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.scss';
+import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           {children}
         </div>
         <ToastContainer />
+        <Footer/>
       </body>
     </html>
   );

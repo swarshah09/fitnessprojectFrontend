@@ -1,76 +1,84 @@
 "use client"
-import React from 'react'
-import './workoutPage.scss'
-import { useSearchParams } from 'next/navigation'
-const page = () => {
-    const [workout, setWorkout] = React.useState<any>(null)
+import React from 'react';
+import './workoutPage.scss';
+import { useSearchParams } from 'next/navigation';
 
+interface Exercise {
+    name: string;
+    videoUrl: string;
+    sets: number;
+    reps: number;
+    description: string;
+}
 
-    const getworkout = async () => {
-        let data: any = {
-            type: 'Chest',
-            imageUrl: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-            durationInMin: 30,
-            exercises: [
-                {
-                    exercise: 'Flat Bench Press',
-                    videoUrl: 'https://gymvisual.com/modules/productmedia/uploads/00251205barbellbenchpresschestfix2view.mp4',
-                    sets: 3,
-                    reps: 10,
-                    rest: 60,
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-                },
-                {
-                    exercise: 'Incline Bench Press',
-                    videoUrl: 'https://gymvisual.com/modules/productmedia/uploads/00471205barbellinclinebenchpresschestfix2view.mp4',
-                    sets: 3,
-                    reps: 10,
-                    rest: 60,
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+interface WorkoutData {
+    name: string;
+    exercises: Exercise[];
+}
 
-                },
-                {
-                    exercise: 'Decline Bench Press',
-                    videoUrl: 'https://gymvisual.com/modules/productmedia/uploads/508e145a4dc30f62cae843c6fff1939b.mp4',
-                    sets: 3,
-                    reps: 10,
-                    rest: 60,
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+const Page = () => {
+    const [workout, setWorkout] = React.useState<WorkoutData | null>(null);
+    const searchParams = useSearchParams();
+    const [data, setData] = React.useState<WorkoutData | null>(null);
 
+    const workoutId = searchParams.get('id');
+
+    const getWorkout = async () => {
+        fetch(process.env.NEXT_PUBLIC_BACKEND_API + '/workoutplans/workouts/' + workoutId, {
+            method: 'GET',
+            credentials: 'include',
+        })
+            .then(res => res.json())
+            .then((responseData: { ok: boolean; data: WorkoutData }) => {
+                if (responseData.ok) {
+                    setData(responseData.data);
+                } else {
+                    setData(null);
                 }
-            ]
-        }
-
-        setWorkout(data)
-    }
+            })
+            .catch(err => {
+                console.error(err);
+                setData(null);
+            });
+    };
 
     React.useEffect(() => {
-        getworkout()
-    }, [])
+        getWorkout();
+    }, []);
+
     return (
-        <div className='workout'>
-            <h1 className='mainhead1'> {workout?.type} Day</h1>
-            <div className='workout__exercises'>
-                {
-                    workout?.exercises.map((item: any, index: number)=>{
-                        return (
-                            <div className='workout__exercise'>
-                                <h3>{index+1}</h3>
+        <>
+            {data && (
+                <div className='workout'>
+                    <h1 className='mainhead1'> {data?.name} Day</h1>
+                    <div className='workout__exercises'>
+                        {data.exercises.map((item: Exercise, index: number) => (
+                            <div
+                                className={
+                                    index % 2 === 0
+                                        ? 'workout__exercise'
+                                        : 'workout__exercise workout__exercise--reverse'
+                                }
+                                key={index}
+                            >
+                                <h3>{index + 1}</h3>
                                 <div className='workout__exercise__image'>
-                                    <video src={item.videoUrl} autoPlay loop controls></video>
+                                    <video src={item.videoUrl} loop autoPlay />
                                 </div>
                                 <div className='workout__exercise__content'>
-                                    <h2>{item.exercise}</h2>
-                                    <span>{item.sets} sets X {item.reps} reps</span>
+                                    <h2>{item.name}</h2>
+                                    <span>
+                                        {item.sets} sets X {item.reps} reps
+                                    </span>
                                     <p>{item.description}</p>
                                 </div>
                             </div>
-                        )
-                    })
-                }
-            </div>
-        </div>
-    )
-}
+                        ))}
+                    </div>
+                </div>
+            )}
+        </>
+    );
+};
 
-export default page;
+export default Page;

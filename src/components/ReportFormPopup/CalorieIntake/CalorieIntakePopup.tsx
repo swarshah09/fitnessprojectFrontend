@@ -31,7 +31,7 @@ const CalorieIntakePopup: React.FC<CaloriIntakePopupProps> = ({ setShowCalorieIn
     quantitytype: 'g'
   })
   const [items, setItems] = React.useState<any>([])
-
+  
   const [cleared, setCleared] = React.useState<boolean>(false);
   React.useEffect(() => {
     if (cleared) {

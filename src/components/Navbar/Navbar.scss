@@ -3,9 +3,10 @@
 
 nav {
     background-color: #1e1f1f;
+    width: 100% !important;
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-evenly; //changed 
     align-items: center;
     position: sticky;
     top: 0;
@@ -17,82 +18,204 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     gap: 30px;
 
-    .img {
-        height: 30px;
-        width: auto;
+    .block1 {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
 
-        @include md {
-            height: 50px;
+        @include md{
+            gap: 50px;
+            margin-right: 120px;
+        }
+
+        .img {
+            height: 30px;
+            width: auto;
+            margin-left: 15px;
+
+            @include md {
+                height: 50px;
+                margin-left: 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: #a6ff00;
+            }
+        }
+
+        .wk{
+            display: none;
+            @include md{
+                display: flex;
+            }
+        }
+        .nb{
+            display: none;
+            @include md{
+                display: flex;
+            }
+        }
+        .hb{
+            display: none;
+            @include md{
+                display: flex;
+            }
+        }
+        .hbi{
+            display: flex;
+            margin-right: 10px;
+            @include md{
+                display: none;
+            }
         }
     }
 
+
     .center {
+        display: none;
+
+        @include md {
+            margin-right: 120px;
+            display: flex;
+        }
+
         .search {
-            display: inline-block;
-            position: relative;
+            display: none;
+
+            @include md {
+                display: inline-block;
+                position: relative;
+            }
         }
 
         .search input[type="text"] {
-            width: 200px;
-            padding: 10px;
-            border: none;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+
+            @include md {
+                display: flex;
+                width: 400px;
+                padding: 10px;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
         }
 
         .search button[type="submit"] {
-            background-color: #a6ff00;
-            border: none;
-            color: black;
-            cursor: pointer;
-            padding: 10px 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: absolute;
-            top: 0;
-            right: 0;
-            transition: .9s ease;
+            display: none;
+
+            @include md {
+                background-color: #a6ff00;
+                border: none;
+                color: black;
+                cursor: pointer;
+                padding: 10px 20px;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                position: absolute;
+                top: 0;
+                right: 0;
+                transition: .9s ease;
+                display: flex;
+            }
         }
 
         .search button[type="submit"]:hover {
-            transform: scale(1.1);
+            display: none;
+
+            @include md {
+                transform: scale(1.1);
+                color: black;
+                background-color: #858585;
+                display: flex;
+            }
+        }
+    }
+
+    .block2 {
+        @include md {}
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+
+        @include md{
+            gap: 50px;
+            margin-right: 120px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: #a6ff00;
+            }
+        }
+
+        .hm{
+            display: none;
+            @include md{
+                display: flex;
+            }
+        }
+        .hmi{
+            display: flex;
+            @include md{
+                display: none;
+            }
+        }
+        .ab{
+            display: none;
+            @include md{
+                display: flex;
+            }
+        }
+
+        .iobutton{
+            background-color: transparent;
+            color: white;
+            font-size: 20px;
+            @include md{
+                font-size: 24px;
+            }
+
+            .iosbody {
+                padding-top: 6px;
+                font-size: 34px;
+                @include md {
+                    padding-top: 9px;
+                }
+            }
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        button {
+            background-color: #a6ff00;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
             color: black;
-            background-color: #858585;
-        }
+            transition: 0.3s ease-in-out;
+            padding: 10px;
 
-    }
-
-    a {
-        text-decoration: none;
-        color: #fff;
-        transition: 0.3s ease-in-out;
-
-        &:hover {
-            color: #a6ff00;
-        }
-    }
-
-    .iosbody {
-        padding-top: 6px;
-
-        @include md {
-            padding-top: 9px;
-        }
-    }
-
-    button {
-        background-color: #a6ff00;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        color: black;
-        transition: 0.3s ease-in-out;
-        padding: 10px;
-
-        &:hover {
-            background-color: #858585;
+            &:hover {
+                background-color: #858585;
+            }
         }
     }
 

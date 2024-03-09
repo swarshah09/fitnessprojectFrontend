@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AuthPopup.scss';
 import Image from 'next/image';
-import logo from '@/assets/logo.png'
+import logo from '@/assets/fitfreak.png'
 import { AiFillDelete, AiOutlineClose } from 'react-icons/ai'
 import dayjs from 'dayjs';
 
@@ -10,6 +10,8 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 import { DesktopDatePicker } from '@mui/x-date-pickers';
 import { ToastContainer, toast } from 'react-toastify';
+import { FiEye } from "react-icons/fi";
+import { FiEyeOff } from "react-icons/fi";
 
 interface AuthPopupProps {
     setShowpopup: React.Dispatch<React.SetStateAction<boolean>>;
@@ -29,6 +31,7 @@ interface SignupFormData {
 
 const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
     const [showSignup, setShowSignup] = React.useState<boolean>(false)
+    const [showPassword, setShowPassword] = useState<boolean>(false);
     const [signupformData, setSignupFormData] = useState<SignupFormData>({
         name: '',
         email: '',
@@ -44,6 +47,11 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
         email: '',
         password: '',
     })
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
 
     // router.post('/register', async (req, res, next) => {
     //     console.log(req.body);
@@ -115,7 +123,6 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
     //     }
     // })
 
-
     const handleLogin = () => {
         console.log(loginformData);
 
@@ -127,7 +134,7 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
             body: JSON.stringify(loginformData),
             credentials: 'include'
         })
-        .then(res => res.json())
+            .then(res => res.json())
             .then(data => {
                 console.log(data)
 
@@ -169,7 +176,7 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
             }).catch(err => {
                 console.log(err)
             })
-}
+    }
 
 
     const handleActivityLevelChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -200,9 +207,9 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
                 }}>
                 <AiOutlineClose />
             </button>
-            <div className="logo">
+            {/* <div className="logo">
                 <Image src={logo} alt="Logo" />
-            </div>
+            </div> */}
 
             {
                 showSignup ? (
@@ -219,13 +226,32 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
                                         })
                                     }} />
 
-                                <input type="password" className="input" placeholder="Password"
+                                {/* <input type="password" className="input" placeholder="Password"
                                     onChange={(e) => {
                                         setSignupFormData({
                                             ...signupformData,
                                             password: e.target.value
                                         })
-                                    }} />
+                                    }} /> */}
+
+                                <div className='pass'>
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    className="input"
+                                    placeholder="Password"
+                                    value={signupformData.password}
+                                    onChange={(e) => {
+                                        setSignupFormData({
+                                            ...signupformData,
+                                            password: e.target.value
+                                        });
+                                    }}
+                                />
+                                <span className="password-toggle" onClick={togglePasswordVisibility}>
+                                    {showPassword ? <FiEye /> : <FiEyeOff />}
+                                </span>
+                                </div>
+
 
                                 <div className="form_input_leftright">
                                     <input className='input1' placeholder='Name' type='string'
@@ -352,13 +378,31 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
                                         })
                                     }} />
 
-                                <input type="password" className="inputL" placeholder="Password"
+                                {/* <input type="password" className="inputL" placeholder="Password"
                                     onChange={(e) => {
                                         setLoginFormData({
                                             ...loginformData,
                                             password: e.target.value
                                         })
-                                    }} />
+                                    }} /> */}
+
+                                <div className="pass1">
+                                <input
+                                    type={showPassword ? "text" : "password"}
+                                    className="inputL"
+                                    placeholder="Password"
+                                    value={loginformData.password}
+                                    onChange={(e) => {
+                                        setLoginFormData({
+                                            ...loginformData,
+                                            password: e.target.value
+                                        });
+                                    }}
+                                />
+                                <span className="password-toggle" onClick={togglePasswordVisibility}>
+                                    {showPassword ? <FiEye /> : <FiEyeOff />}
+                                </span>
+                                </div>
 
                                 <p className="page-linkL">
                                     <span className="page-link-labelL">Forgot Password?</span>

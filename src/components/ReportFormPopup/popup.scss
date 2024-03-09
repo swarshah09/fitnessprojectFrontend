@@ -88,5 +88,26 @@
     right: 10px;
     transition: 0.3s;
     z-index: 1001;
+}
 
+.sleep-entries{
+
+    .sleep-entry{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 10px;
+    }
+    p{
+        color: black;
+    }
+    button{
+        background-color: var(--col1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
 }

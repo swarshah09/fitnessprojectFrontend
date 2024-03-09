@@ -1,0 +1,166 @@
+@import "../../css-config/mixins.scss";
+.profile-page {
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+    @include md{
+        width: 400px;
+        top: 90px;
+    }
+
+    .close {
+        position: absolute;
+        font-size: 20px;
+        cursor: pointer;
+        color: #ffffff;
+        right: 5px;
+        background-color: transparent;
+        border: none;
+        &:hover{
+            background-color: var(--col1);
+        }
+
+        @include md{
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+        }
+    }
+
+    .profile-details{
+        .profile-header{
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    div {
+        padding: 15px;
+        border-radius: 5px;
+
+        p {
+            margin: 0;
+            line-height: 1.5;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        z-index: 1;
+        width: 250px;
+        height: 10px;
+        margin-left: 70px;
+        top: 30%;
+
+        @include md{
+            top: 40%;
+            margin-left: 25%;
+            width: 200px;
+            height: 60px;
+        }
+
+        p{
+            margin-top: 90px;
+        }
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #fff;
+        left: 15%;
+        transform-origin: 50%;
+        animation: circle7124 .5s alternate infinite ease;
+        
+    }
+
+    @keyframes circle7124 {
+        0% {
+            top: 60px;
+            height: 5px;
+            border-radius: 50px 50px 25px 25px;
+            transform: scaleX(1.7);
+        }
+
+        40% {
+            height: 20px;
+            border-radius: 50%;
+            transform: scaleX(1);
+        }
+
+        100% {
+            top: 0%;
+        }
+    }
+
+    .circle:nth-child(2) {
+        left: 45%;
+        animation-delay: .2s;
+    }
+
+    .circle:nth-child(3) {
+        left: auto;
+        right: 15%;
+        animation-delay: .3s;
+    }
+
+    .shadow {
+        width: 20px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--col1);
+        position: absolute;
+        top: 62px;
+        transform-origin: 50%;
+        z-index: -1;
+        left: 15%;
+        filter: blur(1px);
+        animation: shadow046 .5s alternate infinite ease;
+    }
+
+    @keyframes shadow046 {
+        0% {
+            transform: scaleX(1.5);
+        }
+
+        40% {
+            transform: scaleX(1);
+            opacity: .7;
+        }
+
+        100% {
+            transform: scaleX(.2);
+            opacity: .4;
+        }
+    }
+
+    .shadow:nth-child(4) {
+        left: 45%;
+        animation-delay: .2s
+    }
+
+    .shadow:nth-child(5) {
+        left: auto;
+        right: 15%;
+        animation-delay: .3s;
+    }
+
+    .profile-body{
+        p{
+            color: red;
+        }
+    }
+}

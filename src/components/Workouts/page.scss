@@ -1,0 +1,124 @@
+@import "../../css-config/mixins.scss";
+
+.main{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: auto;
+    overflow: auto;
+    margin-top: 70px;
+    z-index: 1;
+
+    @include md{
+        position: absolute;
+        margin-top: 0;
+    }
+
+    
+    .close {
+        position: absolute;
+        font-size: 20px;
+        cursor: pointer;
+        color: #ffffff;
+        right: 5px;
+        background-color: transparent;
+        border: none;
+        &:hover{
+            background-color: var(--col1);
+        }
+
+        @include md{
+            top: 100px;
+            right: 10px;
+            font-size: 30px;
+        }
+    }
+
+    .workout__exercises {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+
+        .workout__exercise {
+
+            @include md {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                width: 100%;
+                margin-left: 20px;
+            }
+
+            .workout__exercise__image video {
+                max-width: 100%;
+                height: auto;
+                width: 250px;
+
+                @include md{
+                    min-width: 500px;
+                    margin: 0 100px;
+                }
+            }
+
+            .workout__exercise__content {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                margin-left: 20px;
+                align-items: center;
+
+                h2 {
+                    font-size: 50px;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1px var(--col1);
+                    color: transparent;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #ffffff;
+                    background-color: var(--col1);
+                    padding: 5px 20px;
+                    border-radius: 35px;
+                    width: fit-content;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: var(--col1);
+                }
+
+                @include md{
+                    align-items: flex-start;
+                    text-align: left;
+                }
+            }
+        }
+
+        h3 {
+            color: black;
+            @include md {
+                -webkit-text-stroke: 1px var(--col1);
+                color: transparent;
+                font-size: 5rem;
+                font-weight: 900;
+                text-align: center;
+                border: 1px solid var(--col1);
+                width: 7rem;
+                aspect-ratio: 1/1;
+                border-radius: 100%;
+                margin-right: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,271 @@
+@import "../../css-config/mixins.scss";
+
+.site-footer {
+    background-color: #1e1f1f;
+    padding: 45px 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+
+    .container1 {
+        margin-bottom: 15px;
+        @include md {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .img {  
+            display: none;
+            .imgg {
+                height: 70px;
+                width: 240px;
+            }
+
+            @include md{
+                width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+        }
+
+        .about {
+            line-height: 2;
+            text-align: center;
+            align-items: center;
+
+            @include md{
+                width: 40%;
+                margin-right: 100px;
+                text-align: left;
+            }
+
+            h6 {
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-top: 5px;
+                letter-spacing: 2px;
+            }
+        }
+
+        .categories {
+            margin-right: 100px;
+            line-height: 2;
+
+            h6 {
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-top: 5px;
+                letter-spacing: 2px;
+            }
+
+            a {
+                color: #737373;
+                text-decoration: none;
+
+                &:hover {
+                    color: #a6ff00;
+                    text-decoration: none;
+                }
+            }
+
+            .footer-links {
+                padding-left: 0;
+                list-style: none;
+
+                li {
+                    display: block;
+
+                    a {
+                        color: #737373;
+                        text-decoration: none;
+
+                        &:active,
+                        &:focus,
+                        &:hover {
+                            color: #a6ff00;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &.inline li {
+                    display: inline-block;
+                }
+            }
+
+        }
+
+        .links {
+            line-height: 2;
+
+            h6 {
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-top: 5px;
+                letter-spacing: 2px;
+            }
+
+            a {
+                color: #737373;
+                text-decoration: none;
+
+                &:hover {
+                    color: #a6ff00;
+                    text-decoration: none;
+                }
+            }
+
+            .footer-links {
+                padding-left: 0;
+                list-style: none;
+
+                li {
+                    display: block;
+                    cursor: pointer;
+
+                    a {
+                        color: #737373;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:active,
+                        &:focus,
+                        &:hover {
+                            color: #a6ff00;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &.inline li {
+                    display: inline-block;
+                }
+            }
+
+        }
+        .phone{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            @include md{
+                
+            }
+        }
+    }
+
+    .container2 {
+        margin-top: 20px;
+
+        @include md{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            @include md{
+                margin-left: 100px;
+            }
+
+        }
+
+        .icons {
+            margin-right: 50px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-left: 60px;
+            list-style: none;
+            @include md{
+                text-align: right;
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+
+            li {
+                display: inline-block;
+                margin-bottom: 4px;
+                cursor: pointer;
+
+                &.title {
+                    margin-right: 15px;
+                    text-transform: uppercase;
+                    color: #96a2b2;
+                    font-weight: 700;
+                    font-size: 13px;
+                }
+
+                a {
+                    background-color: #eceeef;
+                    color: black;
+                    font-size: 20px;
+                    display: inline-block;
+                    line-height: 44px;
+                    width: 44px;
+                    height: 44px;
+                    text-align: center;
+                    margin-right: 8px;
+                    border-radius: 100%;
+                    transition: all 0.2s linear;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        color: #fff;
+                        background-color: #29aafe;
+                    }
+
+                    &.facebook:hover {
+                        background-color: #3b5998;
+                    }
+
+                    &.twitter:hover {
+                        background-color: #00aced;
+                    }
+
+                    &.linkedin:hover {
+                        background-color: #007bb6;
+                    }
+
+                    &.instagram:hover {
+                        background-color: #ea4c89;
+                    }
+
+                    &.size-sm {
+                        line-height: 34px;
+                        height: 34px;
+                        width: 34px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+
+        hr {
+            border-top-color: #bbb;
+            opacity: 0.5;
+        }
+
+        a {
+            color: #737373;
+            text-decoration: none;
+
+            &:hover {
+                color: #3366cc;
+                text-decoration: none;
+            }
+        }
+    }
+}

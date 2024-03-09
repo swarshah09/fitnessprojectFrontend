@@ -22,43 +22,266 @@
 }
 
 .workout {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
 
-    .swiper-slide {
-        width: 400px;
-        height: 200px;
-        border-radius: 20px;
-        border: 1px solid #e6e6e6;
-        background-size: cover;
 
-        .swiper-slide-content {
-            background-color: rgba(0, 0, 0, 0.385);
-            color: white;
-            position: relative;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
+    @include md {
+        display: flex;
+    }
+
+
+    .row1 {
+        @include md {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        }
 
-            h2 {
-                font-size: 1.5rem;
-                font-weight: 900;
-                text-align: center;
+        .window {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
             }
 
             p {
-                font-size: 1rem;
-                font-weight: 500;
-                text-align: center;
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+
+            // .swiper-slide-content {
+            //     background-color: rgba(0, 0, 0, 0.385);
+            //     color: white;
+            //     position: relative;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 200px;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     flex-direction: column;
+
+            //     h2 {
+            //         font-size: 1.5rem;
+            //         font-weight: 900;
+            //         text-align: center;
+            //     }
+
+            //     p {
+            //         font-size: 1rem;
+            //         font-weight: 500;
+            //         text-align: center;
+            //     }
+            // }
+        }
+
+        .window2 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2019/01/Birds-Eye-Shot-of-Man-Doing-Crunches-On-Yoga-Mat.jpg?quality=86&strip=all);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+
+        .window3 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1603287681836-b174ce5074c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFjayUyMHdvcmtvdXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
             }
         }
     }
+
+    .row2 {
+        @include md {
+            display: flex;
+        }
+
+        .window4 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+
+        .window5 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHJpY2Vwc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+
+        .window6 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .row3 {
+        @include md {
+            display: flex;
+        }
+
+        .window7 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1434608519344-49d77a699e1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGVnJTIwd29ya291dHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+
+        .window8 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://img.freepik.com/free-photo/healthy-young-sportswoman-doing-exercises-all-fours-arching-back-straightening-leg-up-concept-sport-fitness-lifestyle_639032-901.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699056000&semt=ais);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+
+        .window9 {
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            border: 1px solid #e6e6e6;
+            background-size: cover;
+            background-image: url(https://media.istockphoto.com/id/1344890104/photo/young-african-american-sportsman-sitting-on-floor-and-doing-stretching-exercise-indoors.jpg?s=612x612&w=0&k=20&c=ac3dVK5kETFJGCjbqsLE9GAyeV7q53h1ZWimBeGTcu0=);
+            text-align: center;
+            margin-left: 50px;
+            margin-bottom: 10px;
+
+            @include md {
+                width: 400px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                margin-top: 85px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+
 }
