@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import './workoutPage.scss';
-import { useSearchParams } from 'next/navigation';
+// import { useSearchParams } from 'next/navigation';
 
 interface Exercise {
     name: string;
@@ -18,33 +18,33 @@ interface WorkoutData {
 
 const Page = () => {
     const [workout, setWorkout] = React.useState<WorkoutData | null>(null);
-    const searchParams = useSearchParams();
+    // const searchParams = useSearchParams();
     const [data, setData] = React.useState<WorkoutData | null>(null);
 
-    const workoutId = searchParams.get('id');
+    // const workoutId = searchParams.get('id');
 
-    const getWorkout = async () => {
-        fetch(process.env.NEXT_PUBLIC_BACKEND_API + '/workoutplans/workouts/' + workoutId, {
-            method: 'GET',
-            credentials: 'include',
-        })
-            .then(res => res.json())
-            .then((responseData: { ok: boolean; data: WorkoutData }) => {
-                if (responseData.ok) {
-                    setData(responseData.data);
-                } else {
-                    setData(null);
-                }
-            })
-            .catch(err => {
-                console.error(err);
-                setData(null);
-            });
-    };
+    // const getWorkout = async () => {
+    //     fetch(process.env.NEXT_PUBLIC_BACKEND_API + '/workoutplans/workouts/' + workoutId, {
+    //         method: 'GET',
+    //         credentials: 'include',
+    //     })
+    //         .then(res => res.json())
+    //         .then((responseData: { ok: boolean; data: WorkoutData }) => {
+    //             if (responseData.ok) {
+    //                 setData(responseData.data);
+    //             } else {
+    //                 setData(null);
+    //             }
+    //         })
+    //         .catch(err => {
+    //             console.error(err);
+    //             setData(null);
+    //         });
+    // };
 
-    React.useEffect(() => {
-        getWorkout();
-    }, []);
+    // React.useEffect(() => {
+    //     getWorkout();
+    // }, []);
 
     return (
         <>
