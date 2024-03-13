@@ -1,13 +1,14 @@
 # Fitneess Freak
 A MERN Stack application where you can track your fitness and keep yourself healthy!
-Get can access all the types of workouts and kepp the track of your 
-1.Calorie Inatke
-2.Sleep
-3.Step Count
-4.Water Intake 
-5.Workout Completed
-6.Weight
 
+Get can access all the types of workouts and kep the track of your 
+1. Calorie Inatke
+2. Sleep
+3. Step Count
+4. Water Intake 
+5. Workout Completed
+6. Weight
+7. Calculate BMI
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Overview
