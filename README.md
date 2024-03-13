@@ -23,7 +23,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 #### User Component
 <img width="404" alt="Screenshot 2024-03-13 at 1 23 44 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/9fa0a38c-e143-4fe7-ba8d-ae44a72a584c">
-
 #### BMI Calculator
 <img width="401" alt="Screenshot 2024-03-13 at 5 15 14 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/d002df29-8816-4e04-9b91-936d045cbfe5">
 
@@ -49,7 +48,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # API Reference
 Nutrition API has been used to calculate the calorie count of the food items
-[Api Link](https://api.api-ninjas.com/v1/nutrition?query=)
+[Api Link](https://api-ninjas.com/api/nutrition)
 
 ## Getting Started
 
