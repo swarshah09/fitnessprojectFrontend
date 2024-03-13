@@ -25,7 +25,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <img width="404" alt="Screenshot 2024-03-13 at 1 23 44 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/9fa0a38c-e143-4fe7-ba8d-ae44a72a584c">
 
 #### BMI Calculator
-<img width="400" alt="Screenshot 2024-03-13 at 4 56 42 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/08a2de04-8147-4148-bcde-321eefc9ef4a">
+<img width="401" alt="Screenshot 2024-03-13 at 5 15 14 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/d002df29-8816-4e04-9b91-936d045cbfe5">
 
 #### Login and Signup Components
 <img width="1680" alt="Screenshot 2024-03-13 at 1 22 50 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/0f4b22e7-9f60-4461-8459-0a7be97c01d2">
@@ -35,7 +35,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <img width="1680" alt="Screenshot 2024-03-13 at 5 05 35 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/330500fa-5f00-41cb-a6e8-8471eee91b03">
 <img width="1680" alt="Screenshot 2024-03-13 at 5 00 23 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/cb8ec2d4-5756-4f5b-976e-5540ef76e01c">
 
-### [Link To The BackEnd Repository]([https://github.com/swarshah09/fitnessprojectBackend.git)
+# [Link To The BackEnd Repository]([https://github.com/swarshah09/fitnessprojectBackend.git)
 
 # Tech Stack
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
@@ -47,6 +47,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 
+# API Reference
+Nutrition API has been used to calculate the calorie count of the food items
+[Api Link](https://api.api-ninjas.com/v1/nutrition?query=)
 
 ## Getting Started
 
