@@ -23,6 +23,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 #### User Component
 <img width="404" alt="Screenshot 2024-03-13 at 1 23 44 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/9fa0a38c-e143-4fe7-ba8d-ae44a72a584c">
+
 #### BMI Calculator
 <img width="400" alt="Screenshot 2024-03-13 at 4 56 42 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/08a2de04-8147-4148-bcde-321eefc9ef4a">
 
@@ -31,6 +32,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <img width="1680" alt="Screenshot 2024-03-13 at 1 23 01 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/f32947be-918f-4df6-9c43-594d75c6e905">
 
 #### Report Page
+<img width="1680" alt="Screenshot 2024-03-13 at 5 00 23 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/cb8ec2d4-5756-4f5b-976e-5540ef76e01c">
+
+<img width="1680" alt="Screenshot 2024-03-13 at 5 05 35 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/330500fa-5f00-41cb-a6e8-8471eee91b03">
+
+# Tech Stack
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
 ## Getting Started
 
 First, run the development server:
