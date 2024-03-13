@@ -19,7 +19,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 #### Home Page
 <img width="1680" alt="Screenshot 2024-03-13 at 1 22 20 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/74bb6a8f-9868-4cd7-974c-a7b36c14ef9b">
 
-#### Other Pages
 <img width="1680" alt="Screenshot 2024-03-13 at 1 22 31 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/4a266b6c-a843-47e7-ae8f-2587026ffe1e">
 <img width="404" alt="Screenshot 2024-03-13 at 1 23 44 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/9fa0a38c-e143-4fe7-ba8d-ae44a72a584c">
 <img width="400" alt="Screenshot 2024-03-13 at 4 56 42 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/08a2de04-8147-4148-bcde-321eefc9ef4a">
