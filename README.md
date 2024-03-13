@@ -20,6 +20,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <img width="1680" alt="Screenshot 2024-03-13 at 1 22 20 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/74bb6a8f-9868-4cd7-974c-a7b36c14ef9b">
 
 <img width="1680" alt="Screenshot 2024-03-13 at 1 22 31 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/4a266b6c-a843-47e7-ae8f-2587026ffe1e">
+<img width="1680" alt="Screenshot 2024-03-14 at 2 10 27 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/91cea06f-720e-4b70-9702-2a117f92e191">
 
 #### User Component
 <img width="404" alt="Screenshot 2024-03-13 at 1 23 44 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/9fa0a38c-e143-4fe7-ba8d-ae44a72a584c">
