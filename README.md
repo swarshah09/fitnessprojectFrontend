@@ -32,15 +32,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 <img width="1680" alt="Screenshot 2024-03-13 at 1 23 01 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/f32947be-918f-4df6-9c43-594d75c6e905">
 
 #### Report Page
+<img width="1680" alt="Screenshot 2024-03-13 at 5 05 35 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/330500fa-5f00-41cb-a6e8-8471eee91b03">
 <img width="1680" alt="Screenshot 2024-03-13 at 5 00 23 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/cb8ec2d4-5756-4f5b-976e-5540ef76e01c">
 
-<img width="1680" alt="Screenshot 2024-03-13 at 5 05 35 PM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/330500fa-5f00-41cb-a6e8-8471eee91b03">
+
 
 # Tech Stack
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
+
 
 ## Getting Started
 
