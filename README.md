@@ -9,10 +9,12 @@ Get can access all the types of workouts and kep the track of your
 5. Workout Completed
 6. Weight
 7. Calculate BMI
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 # Overview
 #### Welcome Page 
+<img width="1680" alt="Screenshot 2024-03-13 at 1 21 41 AM" src="https://github.com/swarshah09/fitnessprojectFrontend/assets/90791181/46343890-0367-4c26-87f5-3d50b237237f">
 #### Home Page
 #### Login and Signup Components
 #### Report Page
