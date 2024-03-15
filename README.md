@@ -1,7 +1,7 @@
 # Fitneess Freak
 A MERN Stack application where you can track your fitness and keep yourself healthy!
 
-Get can access all the types of workouts and kep the track of your 
+Get can access all the types of workouts and keep the track of your 
 1. Calorie Inatke
 2. Sleep
 3. Step Count
