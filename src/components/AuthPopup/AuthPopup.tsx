@@ -127,7 +127,6 @@ const AuthPopup: React.FC<AuthPopupProps> = ({ setShowpopup }) => {
         console.log(loginformData);
 
         fetch(process.env.NEXT_PUBLIC_BACKEND_API + '/auth/login', {
-            mode: 'no-cors',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
